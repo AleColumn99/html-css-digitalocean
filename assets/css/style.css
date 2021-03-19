@@ -1,0 +1,136 @@
+/* GLOBALI */
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.w-80 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+}
+
+header .header-top {
+  height: 70px;
+  background-color: antiquewhite;
+}
+
+header .header-top .row {
+  line-height: 70px;
+}
+
+/* JUMBOTRON */
+
+header .header-bottom {
+  background-color: aquamarine;
+}
+
+header .header-bottom .header-login {
+  height: 300px;
+  padding: auto;
+  border: 2px solid black;
+  background-color: white;
+}
+
+/* MAIN */
+
+main #businesses {
+  width: 100%;
+  background-color: brown;
+}
+
+main #businesses .row div{
+  height: 20px;
+  background-color: paleturquoise;
+  border: 2px solid black;
+}
+
+main #deploy {
+  width: 100%;
+  background-color: darkgoldenrod;
+}
+
+main #deploy .row div{
+  height: 150px;
+  background-color: wheat;
+  border: 2px solid black;
+}
+
+main #themes {
+  width: 100%;
+  height: 500px;
+  background-color: fuchsia;
+}
+
+main #themes .carousel {
+  height: 300px;
+  margin: auto;
+  background-color: white;
+  border: 2px solid black;
+}
+
+main #features {
+  width: 100%;
+  background-color: greenyellow;
+}
+
+main #features .row div{
+  height: 200px;
+  background-color: wheat;
+  border: 2px solid black;
+}
+
+main #cities {
+  width: 100%;
+  background-color: blue;
+}
+
+main #cities .row div{
+  height: 200px;
+  background-color: yellow;
+  border: 2px solid black;
+}
+
+main #teams {
+  width: 100%;
+  height: 500px;
+  background-color: red;
+}
+
+main #teams .carousel {
+  height: 300px;
+  margin: auto;
+  background-color: orange;
+  border: 2px solid black;
+}
+
+main #get-started {
+  width: 100%;
+  height: 200px;
+  background-color: hotpink;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+}
+
+footer .footer-lists {
+  background-color: khaki;
+}
+
+footer .footer-lists .row div {
+  height: 100px;
+  background-color: lawngreen;
+  border: 2px solid black;
+}
