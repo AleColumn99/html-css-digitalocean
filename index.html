@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -21,35 +24,99 @@
 
     <header>
 
-      <div class="header-top">
+      <div class="sc-navbar">
         <div class="container-fluid w-80">
           <div class="row">
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
-              <p>logo</p>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+              <a href="#">
+                <img src="assets/img/logo.png" alt="header-logo">
+              </a>
             </div>
-            <div class="col-lg-5 hidden-md hidden-sm hidden-xs text-center">
-              <p>nav center</p>
+            <div class="col-lg-6 hidden-md hidden-sm hidden-xs text-center">
+              <ul class="inline-list capitalize">
+                <li>
+                  <a href="#">
+                    products <i class="fas fa-chevron-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    customers <i class="fas fa-chevron-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    community <i class="fas fa-chevron-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    pricing
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="col-lg-5 hidden-md hidden-sm hidden-xs text-right">
-              <p>nav right</p>
+            <div class="col-lg-4 hidden-md hidden-sm hidden-xs text-right">
+              <ul class="inline-list capitalize w-100">
+                <li>
+                  <a href="#">
+                    docs
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    support <i class="fas fa-chevron-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    login <i class="fas fa-chevron-down"></i>
+                  </a>
+                </li>
+                <li>
+                  <button class="btn btn-empty capitalize">
+                    <a href="#">
+                      sign up
+                    </a>
+                  </button>
+                </li>
+              </ul>
             </div>
-            <div class="hidden-lg col-md-6 col-sm-6 col-xs-6 text-right">
-              hamburger
+            <div class="hidden-lg col-md-9 col-sm-8 col-xs-6 text-right">
+              <a href="#" class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="header-bottom">
+      <div class="sc-jumbotron">
         <div class="container-fluid w-80">
           <div class="row">
             <div class="col-md-7">
-              <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-              <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe est earum voluptatibus repellendus aliquam exercitationem beatae laudantium vitae ea provident!</h5>
+              <h1>The simplest cloud platform for developers & teams</h1>
+              <h5>Deploy, manage, and scale cloud applications faster and more efficienlty on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousands.</h5>
             </div>
             <div class="col-md-5">
               <div class="header-login">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore quis libero voluptas blanditiis, numquam eveniet recusandae tenetur, aut id officiis magni ea sint suscipit voluptate consequuntur commodi. Animi maiores necessitatibus velit provident eligendi sit voluptatibus nobis aliquid quisquam earum culpa, ratione officiis magni, laborum voluptatum adipisci, labore quae vel cumque!
+                <h3 class="text-center">
+                  Deploy your app in seconds.
+                </h3>
+                <h3 class="text-center blue">
+                  Get started now.
+                </h3>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button class="btn btn-filled-blue">
+                  Create your account
+                </button>
+                <button class="btn">
+                  <img src="assets/img/google-icon.png" alt="google-logo"> <span class="text-center">Sign Up with Google</span>
+                </button>
+                <p class="text-center">
+                  By signing up you agree to the <a href="">Terms of Service</a>
+                </p>
               </div>
             </div>
           </div>
@@ -62,52 +129,145 @@
 
       <div id="businesses">
         <div class="container-fluid w-80 text-center">
-          <h5 class="uppercase">blablabla</h5>
+          <h4 class="uppercase">innovative businesses trust digitalocean</h4>
           <div class="row">
-            <div class="col-md-2 col-sm-6 col-xs-6">1</div>
-            <div class="col-md-2 col-sm-6 col-xs-6">2</div>
-            <div class="col-md-2 col-sm-6 col-xs-6">3</div>
-            <div class="col-md-2 col-sm-6 col-xs-6">4</div>
-            <div class="col-md-2 col-sm-6 col-xs-6">5</div>
-            <div class="col-md-2 col-sm-6 col-xs-6">6</div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+              <img src="assets/img/docker.svg" alt="">
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+              <img src="assets/img/gitlab.svg" alt="">
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+              <img src="assets/img/slack.svg" alt="">
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+              <img src="assets/img/hashicorp.svg" alt="">
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+              <img src="assets/img/wework.svg" alt="">
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-6">
+              <img src="assets/img/splunk.svg" alt="">
+            </div>
           </div>
-          <p>cose customers freccina</p>
+          <p>
+            <a href="">
+              View customers stories >
+            </a>
+          </p>
         </div>
       </div>
 
       <div id="deploy">
         <div class="container-fluid w-80">
-          <h3 class="text-center">Deploy bla bla</h3>
-          <h5 class="text-center">lorem 20</h5>
-          <div class="row">
-            <div class="col-md-4">
-              lista
-            </div>
-            <div class="col-md-4">
-              cluster
-            </div>
-            <div class="col-md-4">
-              optimized
-            </div>
-            <div class="col-md-offset-4 col-md-4">
-              one-click
-            </div>
-            <div class="col-md-4">
-              global
+          <h2 class="text-center">
+            Deploy and scale seamlessly
+          </h2>
+          <h4 class="text-center">
+            Our optimized configuration process saves your team time when running and scaling distribuited applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.
+          </h4>
+          <div class="container-fluid w-80">
+            <div class="row">
+              <div class="col-md-2 margin-bottom-30">
+                <ul class="vertical-list capitalize">
+                  <li>
+                    <a href="">
+                      deploy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      manage
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      secure
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      scale
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      monitor
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-5 margin-bottom-30">
+                <img src="assets/img/cluster-deploy.svg" alt="">
+                <h5>Cluster deployments</h5>
+                <p>
+                  Provision multiple Droplets (virtual machine) in seconds with our control panel, CLI, or directly against our API.
+                </p>
+              </div>
+              <div class="col-md-5 margin-bottom-30">
+                <img src="assets/img/optimized-compute.svg" alt="">
+                <h5>Optimized compute types</h5>
+                <p>
+                  Het the compute resources you need with Standard or Optimized Droplets.
+                </p>
+              </div>
+              <div class="col-md-5 margin-bottom-30">
+                <img src="assets/img/one-click.svg" alt="">
+                <h5>One-click apps</h5>
+                <p>
+                  Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.
+                </p>
+              </div>
+              <div class="col-md-5 margin-bottom-30">
+                <img src="assets/img/global.svg" alt="">
+                <h5>Global avaliability</h5>
+                <p>
+                  Deploy to any of our data center regions around the world.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="themes">
-        <div class="container-fluid w-80 text-center">
-          <h3>blablabla</h3>
-          <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, esse?</h5>
-          <div class="carousel">carousel</div>
+      <div id="themes" class="text-center">
+        <h2 class="margin-bottom-30">Designed for developers</h2>
+        <h4 class="margin-bottom-30">
+          Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.
+        </h4>
+        <div class="container-fluid w-60 text-center">
+          <div class="row">
+            <div class="col-sm-1 col-xs-1 chevron">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="col-sm-10 col-xs-10 margin-bottom-30">
+              <img src="assets/img/slide.jpg" class="margin-bottom-30">
+              <h5 class="margin-bottom-30">
+                Create compute servers in 55 seconds or less
+              </h5>
+              <ul class="inline-list">
+                <li>
+                  <i class="fas fa-circle"></i>
+                </li>
+                <li>
+                  <i class="far fa-circle"></i>
+                </li>
+                <li>
+                  <i class="far fa-circle"></i>
+                </li>
+                <li>
+                  <i class="far fa-circle"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-1 col-xs-1 chevron">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div id="features">
+      <div id="features" class="text-center">
         <div class="container-fluid w-80 text-center">
           <h3>Deploy bla bla</h3>
           <div class="row">

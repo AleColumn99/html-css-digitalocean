@@ -1,4 +1,26 @@
+/* DEBUG */
+
+.debug1 {
+  background-color: blue;
+}
+
+.debug2 {
+  background-color: brown;
+}
+
 /* GLOBALI */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
 
 .text-center {
   text-align: center;
@@ -8,9 +30,86 @@
   text-align: right;
 }
 
+.w-60 {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .w-80 {
   width: 80%;
   margin: 0 auto;
+}
+
+.w-100 {
+  width: 100%;
+  padding: 0;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.blue {
+  color: #006AFF;
+}
+
+/* LISTS */
+
+.inline-list {
+  list-style: none;
+}
+
+.inline-list li {
+  display: inline;
+  padding: 0 2%;
+}
+
+.inline-list li a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.inline-list li a,
+.inline-list li a:hover,
+.inline-list li a:active {
+  color: black;
+}
+
+.vertical-list {
+  list-style: none;
+}
+
+.vertical-list li {
+  padding:10px 0;
+}
+
+.vertical-list li a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.vertical-list li a,
+.vertical-list li a:hover,
+.vertical-list li a:active {
+  color: gray;
+}
+
+/* BUTTON */
+
+.btn {
+  padding: 10px;
+}
+
+.btn-filled-blue {
+  background-color: #579AFF;
+  color: white;
+}
+
+.btn-filled-blue:active,
+.btn-filled-blue:hover {
+  background-color: #006AFF;
+  color: white;
+  border: none;
 }
 
 /* HEADER */
@@ -19,63 +118,177 @@ header {
   width: 100%;
 }
 
-header .header-top {
-  height: 70px;
-  background-color: antiquewhite;
+header .sc-navbar {
+  height: 80px;
 }
 
-header .header-top .row {
-  line-height: 70px;
+header .sc-navbar .btn {
+  color: #006AFF;
+  border: 1px solid #006AFF;
+  background-color: white;
+}
+
+header .sc-navbar .btn a {
+  color: #006AFF;
+}
+
+header .sc-navbar .row {
+  line-height: 80px;
+}
+
+header .sc-navbar img {
+  width: 100%;
+}
+
+header .sc-navbar .hamburger-menu {
+  font-size: 200%;
+  color: #006AFF;
 }
 
 /* JUMBOTRON */
 
-header .header-bottom {
-  background-color: aquamarine;
+header .sc-jumbotron {
+  background-image: url('../img/bg-banner-home.jpg');
+  background-size: cover;
 }
 
-header .header-bottom .header-login {
-  height: 300px;
-  padding: auto;
-  border: 2px solid black;
-  background-color: white;
+header .sc-jumbotron h1 {
+  color: white;
+  font-size: 60px;
 }
+
+header .sc-jumbotron h5 {
+  color: #BBCDFF;
+  font-size: 20px;
+  line-height: 3.5vh;
+}
+
+header .sc-jumbotron .header-login {
+  padding: auto;
+  border-radius: 10px;
+  background-color: white;
+  margin: 30px 0;
+  padding: 20px;
+}
+
+header .sc-jumbotron .header-login h3 {
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+header .sc-jumbotron .header-login input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 0.5px solid lightgray;
+}
+
+header .sc-jumbotron .header-login .btn-filled-blue,
+header .sc-jumbotron .header-login .btn {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+header .sc-jumbotron .header-login .btn img {
+  width: 20px;
+}
+
+header .sc-jumbotron .header-login p {
+  font-size: 80%;
+}
+
+header .sc-jumbotron .header-login p a {
+  text-decoration: underline;
+}
+
 
 /* MAIN */
 
 main #businesses {
   width: 100%;
-  background-color: brown;
+  background-color: #F3F5F9;
 }
 
-main #businesses .row div{
-  height: 20px;
-  background-color: paleturquoise;
-  border: 2px solid black;
+main #businesses h4 {
+  color: gray;
+  margin: 30px 0;
+}
+
+main #businesses img {
+  max-height: 100px;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+main #businesses p {
+  margin-bottom: 30px;
 }
 
 main #deploy {
   width: 100%;
-  background-color: darkgoldenrod;
+}
+
+main #deploy h2 {
+  color: #031C4E;
+  margin: 30px 0;
+}
+
+main #deploy h4 {
+  color: #5C6A88;
+  margin-bottom: 30px;
+}
+
+main #deploy .vertical-list {
+  border-left: 1px solid #CCCCCC;
+  padding-left: 20px;
+}
+
+main #deploy .vertical-list li a {
+  color: #75809A;
 }
 
 main #deploy .row div{
-  height: 150px;
-  background-color: wheat;
-  border: 2px solid black;
+  min-height: 150px;
 }
 
 main #themes {
   width: 100%;
-  height: 500px;
-  background-color: fuchsia;
+  background-color: #F3F5F9;
 }
 
-main #themes .carousel {
-  height: 300px;
-  margin: auto;
-  background-color: white;
-  border: 2px solid black;
+main #themes h2 {
+  color: #031C4E;
+  padding-top: 30px;
+}
+
+main #themes h4 {
+  color: #5C6A88;
+}
+
+main #themes .row img {
+  width: 100%;
+}
+
+main #themes .row .chevron {
+  height: 100%;
+}
+
+main #themes .row .chevron i {
+  margin-top: 100%;
+  font-size: 5vh;
+  color: #6F7B97;
+}
+
+main #themes .row i:active,
+main #themes .row i:hover {
+  font-size: 300%;
+  color: #031C4E;
+}
+
+main #themes .row .inline-list li {
+  color: #006AFF;
+  padding: 0;
 }
 
 main #features {
