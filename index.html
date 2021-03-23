@@ -22,17 +22,21 @@
 
   <body>
 
+    <!-- header -->
+
     <header>
 
-      <div class="sc-navbar">
+      <div class="sc-navbar"> <!-- navbar -->
         <div class="container-fluid w-80">
           <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"> <!-- navbar logo -->
               <a href="#">
                 <img src="assets/img/logo.png" alt="header-logo">
               </a>
-            </div>
-            <div class="col-lg-6 hidden-md hidden-sm hidden-xs text-center">
+            </div>  <!-- /navbar logo -->
+
+            <div class="col-lg-6 hidden-md hidden-sm hidden-xs text-center">  <!-- central menu -->
               <ul class="inline-list capitalize">
                 <li>
                   <a href="#">
@@ -55,8 +59,9 @@
                   </a>
                 </li>
               </ul>
-            </div>
-            <div class="col-lg-4 hidden-md hidden-sm hidden-xs text-right">
+            </div>  <!-- /central menu -->
+
+            <div class="col-lg-4 hidden-md hidden-sm hidden-xs text-right"> <!-- right menu -->
               <ul class="inline-list capitalize w-100">
                 <li>
                   <a href="#">
@@ -81,24 +86,28 @@
                   </button>
                 </li>
               </ul>
-            </div>
-            <div class="hidden-lg col-md-9 col-sm-8 col-xs-6 text-right">
+            </div>  <!-- /right menu -->
+
+            <div class="hidden-lg col-md-9 col-sm-8 col-xs-6 text-right"> <!-- hamburger menu -->
               <a href="#" class="hamburger-menu">
                 <i class="fas fa-bars"></i>
               </a>
-            </div>
+            </div>  <!-- /hamburger menu -->
+
           </div>
         </div>
-      </div>
+      </div>  <!-- /navbar -->
 
-      <div class="sc-jumbotron">
+      <div class="sc-jumbotron">  <!-- jumbotron -->
         <div class="container-fluid w-80">
           <div class="row">
-            <div class="col-md-7">
+
+            <div class="col-md-7">  <!-- jumbotron text -->
               <h1>The simplest cloud platform for developers & teams</h1>
               <h5>Deploy, manage, and scale cloud applications faster and more efficienlty on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousands.</h5>
-            </div>
-            <div class="col-md-5">
+            </div>  <!-- /jumbotron text -->
+
+            <div class="col-md-5">  <!-- login -->
               <div class="header-login">
                 <h3 class="text-center">
                   Deploy your app in seconds.
@@ -118,16 +127,21 @@
                   By signing up you agree to the <a href="">Terms of Service</a>
                 </p>
               </div>
-            </div>
+            </div>  <!-- /login -->
+
           </div>
         </div>
-      </div>
+      </div>  <!-- /jumbotron -->
 
     </header>
 
+    <!-- /header -->
+
+    <!-- main -->
+
     <main>
 
-      <div id="businesses">
+      <div id="businesses"> <!-- businesses -->
         <div class="container-fluid w-80 text-center">
           <h4 class="uppercase">innovative businesses trust digitalocean</h4>
           <div class="row">
@@ -156,16 +170,18 @@
             </a>
           </p>
         </div>
-      </div>
+      </div>  <!-- /businesses -->
 
-      <div id="deploy">
+      <div id="deploy"> <!-- deploy -->
         <div class="container-fluid w-80">
+
           <h2 class="text-center">
             Deploy and scale seamlessly
           </h2>
           <h4 class="text-center">
             Our optimized configuration process saves your team time when running and scaling distribuited applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.
           </h4>
+
           <div class="container-fluid w-80">
             <div class="row">
               <div class="col-md-2 margin-bottom-30">
@@ -227,88 +243,325 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div id="themes" class="text-center">
-        <h2 class="margin-bottom-30">Designed for developers</h2>
-        <h4 class="margin-bottom-30">
+        </div>
+      </div>  <!-- /deploy -->
+
+      <div id="themes" class="text-center"> <!-- themes -->
+        <h2 class="margin-bottom-30 w-80">
+          Designed for developers
+        </h2>
+        <h4 class="margin-bottom-30 w-80">
           Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.
         </h4>
-        <div class="container-fluid w-60 text-center">
+        <div class="w-60 text-center margin-bottom-30">
+          <div class="wrapper"> <!-- carousel -->
+            <i class="fas fa-chevron-left"></i>
+            <img src="assets/img/slide.jpg" class="margin-bottom-10">
+            <i class="fas fa-chevron-right"></i>
+            <h5 class="margin-bottom-10">
+              Create compute servers in 55 seconds or less
+            </h5>
+            <ul class="inline-list text-center margin-bottom-30">
+              <li>
+                <i class="fas fa-circle"></i>
+              </li>
+              <li>
+                <i class="far fa-circle"></i>
+              </li>
+              <li>
+                <i class="far fa-circle"></i>
+              </li>
+              <li>
+                <i class="far fa-circle"></i>
+              </li>
+            </ul>
+          </div>
+        </div>  <!-- /carousel -->
+      </div>  <!-- /themes -->
+
+      <div id="features"> <!-- features -->
+        <h2 class="text-center margin-bottom-30">
+          The features your business needs
+        </h2>
+        <div class="container-fluid w-80">
           <div class="row">
-            <div class="col-sm-1 col-xs-1 chevron">
-              <i class="fas fa-chevron-left"></i>
+            <div class="col-sm-4 margin-bottom-30">
+              <img src="assets/img/pred-pricing.svg" alt="">
+              <h5>Predictable pricing</h5>
+              <p>
+                Leave complex pricing structures behind. Always know what you'll pay per months with a flat, iindustry-leading pricing structure.
+              </p>
+              <p>
+                <a href="">
+                  Pricing >
+                </a>
+              </p>
             </div>
-            <div class="col-sm-10 col-xs-10 margin-bottom-30">
-              <img src="assets/img/slide.jpg" class="margin-bottom-30">
-              <h5 class="margin-bottom-30">
-                Create compute servers in 55 seconds or less
+            <div class="col-sm-4 margin-bottom-30">
+              <img src="assets/img/world-class.svg" alt="">
+              <h5>World-class service</h5>
+              <p>
+                Free round-the-clock technical support for all cutomers. You'll feel the love.
+              </p>
+              <p>
+                <a href="">
+                  Support >
+                </a>
+              </p>
+            </div>
+            <div class="col-sm-4 margin-bottom-30">
+              <img src="assets/img/reliable-platform.svg" alt="">
+              <h5>Reliable platform</h5>
+              <p>
+                More than 100,000 developers teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.
+              </p>
+              <p>
+                <a href="">
+                  Security >
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /features -->
+
+      <div id="cities"> <!-- servers -->
+        <div class="container-fluid w-80 text-center">
+          <h2 class="margin-bottom-30">
+            Service yout customers around the world from 12 regions.
+          </h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <table class="margin-bottom-30">
+
+                <tr class="tr-border-bottom">
+                  <td class="code uppercase">
+                    ams2
+                  </td>
+                  <td class="city capitalize">
+                    amsterdam, netherlands
+                  </td>
+                  <td class="speed-test text-right">
+                    <a href="">
+                      Test speed >
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="tr-border-bottom">
+                  <td class="code uppercase">
+                    ams3
+                  </td>
+                  <td class="city capitalize">
+                    amsterdam, netherlands
+                  </td>
+                  <td class="speed-test text-right">
+                    <a href="">
+                      Test speed >
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="tr-border-bottom">
+                  <td class="code uppercase">
+                    blr1
+                  </td>
+                  <td class="city capitalize">
+                    bangalore, india
+                  </td>
+                  <td class="speed-test text-right">
+                    <a href="">
+                      Test speed >
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="tr-border-bottom">
+                  <td class="code uppercase">
+                    fra1
+                  </td>
+                  <td class="city capitalize">
+                    frankfurt, germay
+                  </td>
+                  <td class="speed-test text-right">
+                    <a href="">
+                      Test speed >
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="tr-border-bottom">
+                  <td class="code uppercase">
+                    lon1
+                  </td>
+                  <td class="city capitalize">
+                    london, UK
+                  </td>
+                  <td class="speed-test text-right">
+                    <a href="">
+                      Test speed >
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="code uppercase">
+                    nyc1
+                  </td>
+                  <td class="city capitalize">
+                    new york, USA
+                  </td>
+                  <td class="speed-test text-right">
+                    <a href="">
+                      Test speed >
+                    </a>
+                  </td>
+                </tr>
+                
+              </table>
+            </div>
+            <div class="col-lg-6">
+              <table class="margin-bottom-30">
+
+                <tr class="tr-border-bottom">
+                  <td class="code uppercase">
+                    ams2
+                  </td>
+                  <td class="city capitalize">
+                    amsterdam, netherlands
+                  </td>
+                  <td class="speed-test text-right">
+                    <a href="">
+                      Test speed >
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="tr-border-bottom">
+                  <td class="code uppercase">
+                    ams3
+                  </td>
+                  <td class="city capitalize">
+                    amsterdam, netherlands
+                  </td>
+                  <td class="speed-test text-right">
+                    <a href="">
+                      Test speed >
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="tr-border-bottom">
+                  <td class="code uppercase">
+                    blr1
+                  </td>
+                  <td class="city capitalize">
+                    bangalore, india
+                  </td>
+                  <td class="speed-test text-right">
+                    <a href="">
+                      Test speed >
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="tr-border-bottom">
+                  <td class="code uppercase">
+                    fra1
+                  </td>
+                  <td class="city capitalize">
+                    frankfurt, germay
+                  </td>
+                  <td class="speed-test text-right">
+                    <a href="">
+                      Test speed >
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="tr-border-bottom">
+                  <td class="code uppercase">
+                    lon1
+                  </td>
+                  <td class="city capitalize">
+                    london, UK
+                  </td>
+                  <td class="speed-test text-right">
+                    <a href="">
+                      Test speed >
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="code uppercase">
+                    nyc1
+                  </td>
+                  <td class="city capitalize">
+                    new york, USA
+                  </td>
+                  <td class="speed-test text-right">
+                    <a href="">
+                      Test speed >
+                    </a>
+                  </td>
+                </tr>
+                
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>  <!-- /servers -->
+
+      <div id="teams" class="text-center"> <!-- themes -->
+        <h2 class="margin-bottom-30 w-80">
+          Developement teams love DigitalOcean
+        </h2>
+        <div class="w-60 text-center">
+          <div class="wrapper">
+            <i class="fas fa-chevron-left"></i>
+            <div class="carousel">
+              <img src="assets/img/rockerbox.png" class="margin-bottom-30">
+              <h4 class="margin-bottom-30">
+                "We have been able to make scaling the technical infrasttructure of our business cost effective and efficient."
+              </h4>
+              <h5>
+                Rick O'Toole
               </h5>
-              <ul class="inline-list">
-                <li>
-                  <i class="fas fa-circle"></i>
-                </li>
-                <li>
-                  <i class="far fa-circle"></i>
-                </li>
-                <li>
-                  <i class="far fa-circle"></i>
-                </li>
-                <li>
-                  <i class="far fa-circle"></i>
-                </li>
-              </ul>
+              <p>
+                Co-founder and CTO
+              </p>
+              <p>
+                <a href="">
+                  Read story >
+                </a>
+              </p>
             </div>
-            <div class="col-sm-1 col-xs-1 chevron">
-              <i class="fas fa-chevron-right"></i>
-            </div>
+            <i class="fas fa-chevron-right"></i>
+            <ul class="inline-list text-center margin-bottom-30">
+              <li>
+                <i class="fas fa-circle"></i>
+              </li>
+              <li>
+                <i class="far fa-circle"></i>
+              </li>
+              <li>
+                <i class="far fa-circle"></i>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-
-      <div id="features" class="text-center">
-        <div class="container-fluid w-80 text-center">
-          <h3>Deploy bla bla</h3>
-          <div class="row">
-            <div class="col-md-4">
-              feature1
-            </div>
-            <div class="col-md-4">
-              feature2
-            </div>
-            <div class="col-md-4">
-              feature3
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="cities">
-        <div class="container-fluid w-80 text-center">
-          <h3>cities bla bla</h3>
-          <div class="row">
-            <div class="col-lg-6">
-              cities1
-            </div>
-            <div class="col-lg-6">
-              cities2
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="teams">
-        <div class="container-fluid w-80 text-center">
-          <h3>blablabla</h3>
-          <div class="carousel">carousel</div>
-        </div>
-      </div>
+      </div>  <!-- /themes -->
 
       <div id="get-started">
         <div class="container-fluid w-80 text-center">
-          <h2>blablabla</h2>
-          <button class="btn">button</button>
+          <h1 class="margin-bottom-30">Get started now.</h1>
+          <button class="btn">
+            <h4>
+              Create your account              
+            </h4>
+          </button>
         </div>
       </div>
 
