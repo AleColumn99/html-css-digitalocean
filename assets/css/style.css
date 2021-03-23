@@ -81,10 +81,11 @@ body {
 
 .vertical-list {
   list-style: none;
+  padding-left: 0;
 }
 
 .vertical-list li {
-  padding:10px 0;
+  padding: 10px 0;
 }
 
 .vertical-list li a {
@@ -430,14 +431,28 @@ main #get-started .btn {
 
 footer {
   width: 100%;
+  padding: 30px 0;
+  color: #7A859D;
+  background-color: #031C4E;
 }
 
-footer .footer-lists {
-  background-color: khaki;
+footer h5:first-of-type {
+  margin-bottom: 0;
 }
 
-footer .footer-lists .row div {
-  height: 100px;
-  background-color: lawngreen;
-  border: 2px solid black;
+footer .inline-list {
+  padding-left: 0;
+}
+
+footer .inline-list li {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+footer h4 {
+  color: white;
+}
+
+footer .vertical-list li {
+  padding: 5px 0;
 }
